@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  font-family: 'Pretendard', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 0 80px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  gap: 70px;
+}
+
+nav a {
+  font-size: 18px;
+}
+
+nav a.active {
+  color: #ae7fd5;
+  font-weight: 700;
+}
+
+.project-detail {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 120px 100px;
+}
+
+/* 제목 */
+
+.project-header {
+  margin-bottom: 120px;
+}
+
+.project-header h1 {
+  font-size: 48px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.project-tags {
+  display: flex;
+  gap: 12px;
+}
+
+.project-tags span {
+  padding: 10px 18px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* section 1 */
+
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 180px;
+}
+
+.phones-top {
+  position: relative;
+  width: 650px;
+  height: 650px;
+}
+
+.phones-top img {
+  width: 700px;
+  position: absolute;
+}
+
+.phones-top img:first-child {
+  left: -200px;
+  top: 0;
+  z-index: 2;
+}
+
+.phones-top img:last-child {
+  left: 30px;
+  top: 0;
+  z-index: 1;
+}
+
+.text-box {
+  width: 520px;
+}
+
+.text-box h2 {
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+.text-box p {
+  font-size: 22px;
+  line-height: 2;
+  color: #555;
+}
+
+/* section 2 */
+
+.section-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 180px;
+}
+
+.feature-left {
+  width: 520px;
+}
+
+.feature-left h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.feature-item {
+  margin-bottom: 80px;
+}
+
+.feature-item h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.feature-item p {
+  font-size: 22px;
+  line-height: 2;
+  color: #555;
+}
+
+.phones-middle {
+  position: relative;
+  width: 650px;
+  height: 750px;
+}
+
+.phones-middle img {
+  width: 700px;
+  position: absolute;
+}
+
+.phones-middle img:first-child {
+  left: -60px;
+  top: 120px;
+
+  z-index: 2;
+}
+
+.phones-middle img:last-child {
+  left: 200px;
+  top: 0;
+
+  z-index: 1;
+}
+/* section 3 */
+
+.section-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-bottom {
+  position: relative;
+  left: -150px;
+}
+
+.phone-bottom img {
+  width: 700px;
+}
+
+.feature-right {
+  width: 650px;
+}
+
+/* 반응형 */
+
+@media (max-width: 1200px) {
+  .project-detail {
+    width: 100%;
+    padding: 120px 30px;
+  }
+
+  .section-1,
+  .section-2,
+  .section-3 {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .phones-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: static;
+  }
+
+  .phones-top img {
+    position: static;
+    width: 250px;
+  }
+
+  .phones-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phones-middle img:first-child {
+    margin-top: 0;
+  }
+
+  .text-box,
+  .feature-left,
+  .feature-right {
+    width: 100%;
+  }
+
+  .project-header h1 {
+    font-size: 36px;
+  }
+
+  .text-box h2,
+  .feature-left h2 {
+    font-size: 30px;
+  }
+
+  .text-box p,
+  .feature-item p {
+    font-size: 18px;
+  }
+
+  .phone-bottom img {
+    width: 280px;
+  }
+}

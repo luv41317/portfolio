@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #222;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.bg-image {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+}
+
+.bg-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+/* 헤더 */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 0 80px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  gap: 70px;
+}
+
+nav a {
+  font-size: 18px;
+}
+
+nav a.active {
+  color: #ae7fd5;
+  font-weight: 700;
+}
+
+/* 연락처 영역 */
+
+.contact-section {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 140px 20px 80px;
+}
+
+/* 글래스 카드 */
+
+.contact-box {
+  width: 500px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+
+  padding: 50px 60px;
+}
+
+/* 제목 */
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-title h2 {
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 4px;
+
+  color: #d58bc0;
+
+  margin-bottom: 12px;
+}
+
+.contact-title p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* 연락처 */
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.icon-circle {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 0.5px solid #d58bc0;
+  border-radius: 50%;
+
+  box-shadow:
+    0 4px 8px rgba(213, 139, 192, 0.15),
+    0 0 8px rgba(213, 139, 192, 0.15);
+
+  flex-shrink: 0;
+}
+
+.icon-circle img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.contact-text h3 {
+  font-size: 18px;
+  font-weight: 500;
+
+  color: #d58bc0;
+
+  margin-bottom: 6px;
+}
+
+.contact-text p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* 구분선 */
+
+.divider {
+  width: 100%;
+  height: 1px;
+
+  background: rgba(0, 0, 0, 0.12);
+
+  margin: 30px 0;
+}
+
+/* 반응형 */
+
+@media (max-width: 1000px) {
+  .contact-box {
+    width: 100%;
+    padding: 50px 35px;
+  }
+
+  .contact-title h2 {
+    font-size: 44px;
+  }
+
+  .contact-title p {
+    font-size: 18px;
+  }
+
+  .contact-item {
+    gap: 20px;
+  }
+
+  .contact-item img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .contact-text h3 {
+    font-size: 16px;
+  }
+
+  .contact-text p {
+    font-size: 20px;
+    word-break: break-all;
+  }
+
+  nav {
+    gap: 30px;
+  }
+
+  header {
+    padding: 0 25px;
+  }
+}

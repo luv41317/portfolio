@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #ffffff;
+  font-family: 'Pretendard', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.intro {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+
+.portfolio span {
+  display: block;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color: #222;
+}
+
+.portfolio .line {
+  width: 45px;
+  height: 1px;
+  background: #222;
+  margin-top: 14px;
+}
+
+/* SKIP */
+
+.skip {
+  position: absolute;
+  top: 10%;
+  right: 20px;
+
+  font-size: 20px;
+  font-weight: 300;
+  color: #ff69d4;
+
+  transform: rotate(90deg);
+  transform-origin: center;
+
+  letter-spacing: 2px;
+}
+
+.skip span {
+  display: block;
+}
+
+/* HEART */
+
+.heart {
+  position: absolute;
+  top: 260px;
+  right: 15%;
+  width: 80px;
+
+  opacity: 0;
+
+  animation:
+    fadeIn 1s ease forwards,
+    floatHeart 3s ease-in-out infinite;
+
+  animation-delay: 0.6s, 0.6s;
+}
+
+/* TITLE */
+
+.title-wrap {
+  position: absolute;
+  left: 20px;
+  top: 90px;
+}
+
+.park,
+.hayoung {
+  font-family: 'Jockey One', sans-serif;
+  font-size: 24vw;
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: 30px;
+}
+
+.park {
+  margin-top: 90px;
+}
+
+.hayoung {
+  background: none;
+}
+.pink-left {
+  background: linear-gradient(
+    45deg,
+    #ffffff -2%,
+    #ff69d4 33%,
+    #271021 60%,
+    #000000 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.black-center {
+  color: #000;
+}
+.pink-right {
+  background: linear-gradient(
+    to top left,
+    #ffffff -2%,
+    #ff69d4 33%,
+    #271021 60%,
+    #000000 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* JOB */
+
+.info {
+  position: absolute;
+
+  width: 100%;
+  top: 41.2%;
+  left: 56.8%;
+
+  z-index: 10;
+}
+
+.info p {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  color: #222;
+}
+
+/* ANIMATION */
+
+.title-wrap {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: introUp 1s ease forwards;
+}
+
+.portfolio,
+.skip,
+.info {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.intro {
+  animation: fadeOut 0.8s ease forwards;
+  animation-delay: 4.2s;
+}
+
+@keyframes introUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) rotate(-3deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+}

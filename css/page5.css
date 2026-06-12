@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 80px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  z-index: 1000;
+}
+
+.header-award {
+  font-size: 18px;
+  color: #666;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  gap: 70px;
+}
+
+nav a {
+  font-size: 18px;
+}
+
+.project-detail {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 180px 100px 120px;
+}
+
+.project-header {
+  margin-bottom: 70px;
+}
+
+.project-header h1 {
+  font-size: 48px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.project-tags {
+  display: flex;
+  gap: 12px;
+}
+
+.project-tags span {
+  padding: 10px 18px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.overview-left {
+  width: 600px;
+}
+
+.overview-left h2 {
+  font-size: 38px;
+  margin-bottom: 35px;
+}
+
+.overview-left p {
+  font-size: 22px;
+  line-height: 2;
+  color: #555;
+}
+
+.github-btn {
+  display: block;
+
+  margin-top: 50px;
+  margin-left: 380px;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #111;
+  z-index: 1;
+}
+
+.overview-right img {
+  position: relative;
+  right: -150px;
+  z-index: -1;
+}
+
+.overview-right img {
+  width: 600px;
+}
+
+.features h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-bottom: 120px;
+}
+
+.feature-card {
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.feature-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+
+.feature-card p {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.tech-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.tech-left img {
+  width: 420px;
+}
+
+.tech-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/* 왼쪽 휴대폰 2개 */
+
+.phone-group {
+  position: relative;
+  height: 100%;
+}
+
+.phone-left {
+  position: absolute;
+
+  width: 900px;
+
+  left: -160px;
+  top: 80px;
+
+  z-index: 1;
+}
+
+.phone-right {
+  position: absolute;
+
+  width: 900px;
+
+  left: 0px;
+  top: 80px;
+
+  z-index: 2;
+}
+
+/* 오른쪽 영역 */
+
+.tech-right {
+  width: 650px;
+}
+
+.tech-right h2 {
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 80px;
+}
+
+.bottom-phone {
+  width: 450px;
+  margin-left: 100px;
+}
+
+.tech-right h2 {
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 60px;
+}
+
+.tech-stack span {
+  padding: 12px 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+  .project-detail {
+    width: 100%;
+    padding: 120px 30px;
+  }
+
+  .overview {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .tech-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .overview-left,
+  .tech-right {
+    width: 100%;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-header h1 {
+    font-size: 36px;
+  }
+
+  .github-btn {
+    font-size: 28px;
+  }
+}
