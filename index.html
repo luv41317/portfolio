@@ -18,7 +18,7 @@
         <span>PORTFOLIO</span>
         <div class="line"></div>
       </div>
-      <a href="main.html" class="skip"> SKIP → </a>
+      <a href="main.html" class="scroll"> SCROLL → </a>
       <img src="images/index page_heart.png" alt="heart" class="heart" />
       <div class="title-wrap">
         <h1 class="park">PARK</h1>
@@ -35,9 +35,30 @@
       </div>
     </section>
     <script>
-      setTimeout(() => {
-        window.location.href = 'main.html';
-      }, 5000);
+      let isMoving = false;
+      let wheelAmount = 0;
+
+      function goMain() {
+        if (isMoving) return;
+
+        isMoving = true;
+
+        document.querySelector('.intro').classList.add('fade-out');
+
+        setTimeout(() => {
+          window.location.href = 'main.html';
+        }, 800);
+      }
+
+      window.addEventListener('wheel', (e) => {
+        if (e.ctrlKey) return;
+
+        wheelAmount += e.deltaY;
+
+        if (wheelAmount > 100) {
+          goMain();
+        }
+      });
     </script>
   </body>
 </html>
