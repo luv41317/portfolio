@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VEGAN 플랫폼</title>
+
+    <link rel="stylesheet" href="css/page6.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-award">
+        한신대학교 2025 한신 AI·SW 페스티벌 캡스톤디자인 부문 | 동상 수상작<br />
+
+        <span id="copyrightBtn">
+          비건과 알러지 환자를 위한 맞춤형 식당 큐레이션 플랫폼 | 컴퓨터
+          프로그램 저작권 등록
+        </span>
+      </div>
+
+      <nav>
+        <a href="main.html">MAIN</a>
+        <a href="page2.html">소개</a>
+        <a href="page3.html" class="active">프로젝트</a>
+        <a href="page9.html">연락처</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="intro-section">
+        <div class="intro-left">
+          <h1>비건과 알러지 환자를 위한 맞춤형 식당 큐레이션 플랫폼</h1>
+
+          <div class="tags">
+            <span>웹서비스</span>
+            <span>지도</span>
+            <span>필터링</span>
+          </div>
+
+          <div class="overview-wrap">
+            <div class="overview-text">
+              <h2>프로젝트 개요</h2>
+
+              <p>
+                비건 및 알러지 식단 이용자의 외식 접근성을 강화하기 위해<br />
+                공공 데이터와 AI 필터링 기술을 활용한<br />
+                맞춤형 식당 추천 및 지도 탐색 플랫폼을 개발하였습니다.
+              </p>
+
+              <a
+                href="https://github.com/luv41317/fresh_plate"
+                class="github-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GITHUB 바로가기 →
+              </a>
+            </div>
+
+            <div class="intro-right">
+              <img src="images/page6_vegan_mockup_1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="desktop-grid">
+        <img src="images/page6_vegan_desktop_1.png" alt="" />
+        <img src="images/page6_vegan_desktop_2.png" alt="" />
+        <img src="images/page6_vegan_desktop_3.png" alt="" />
+        <img src="images/page6_vegan_desktop_4.png" alt="" />
+      </section>
+
+      <section class="feature-section">
+        <div class="feature-left">
+          <img src="images/page6_vegan_mockup_2.png" alt="" />
+        </div>
+
+        <div class="feature-right">
+          <h2>주요 기능</h2>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <img src="images/page6_map.png" alt="" />
+              <p>지도 기반 검색</p>
+            </div>
+
+            <div class="feature-card">
+              <img src="images/page6_allergy.png" alt="" />
+              <p>알레르기 성분 필터링</p>
+            </div>
+
+            <div class="feature-card">
+              <img src="images/page6_information.png" alt="" />
+              <p>상세 정보 제공</p>
+            </div>
+
+            <div class="feature-card">
+              <img src="images/page6_vegan.png" alt="" />
+              <p>비건 유형 필터링</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech-section">
+        <div class="tech-left">
+          <img src="images/page6_vegan_desktop_5.png" alt="" />
+        </div>
+
+        <div class="tech-right">
+          <h2>기술 구성</h2>
+
+          <div class="tech-stack">
+            <div class="tech-row">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>My SQL</span>
+            </div>
+
+            <div class="tech-row">
+              <span>Spring Boot</span>
+              <span>OpenCV</span>
+              <span>Flask</span>
+            </div>
+          </div>
+          <img src="images/page6_vegan_mockup_3.png" alt="" class="tablet" />
+        </div>
+      </section>
+    </main>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <button class="close-btn" id="closeBtn">✕</button>
+
+        <img src="images/page6_copyright.png" alt="저작권 등록증" />
+      </div>
+    </div>
+
+    <script>
+      const popup = document.getElementById('popup');
+      const openBtn = document.getElementById('copyrightBtn');
+      const closeBtn = document.getElementById('closeBtn');
+
+      openBtn.addEventListener('click', () => {
+        popup.classList.add('show');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        popup.classList.remove('show');
+      });
+
+      popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+          popup.classList.remove('show');
+        }
+      });
+    </script>
+  </body>
+</html>
