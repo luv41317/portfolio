@@ -47,9 +47,9 @@ a {
 
 /* SKIP */
 
-.skip {
+.scroll {
   position: absolute;
-  top: 10%;
+  top: 12%;
   right: 20px;
 
   font-size: 20px;
@@ -62,7 +62,7 @@ a {
   letter-spacing: 2px;
 }
 
-.skip span {
+.skroll span {
   display: block;
 }
 
@@ -101,11 +101,13 @@ a {
 }
 
 .park {
-  margin-top: 90px;
+  margin-top: 55px;
+  margin-left: 10px;
 }
 
 .hayoung {
   background: none;
+  margin-left: 10px;
 }
 .pink-left {
   background: linear-gradient(
@@ -139,7 +141,7 @@ a {
   position: absolute;
 
   width: 100%;
-  top: 41.2%;
+  top: 38.3%;
   left: 56.8%;
 
   z-index: 10;
@@ -162,16 +164,15 @@ a {
 }
 
 .portfolio,
-.skip,
+.scroll,
 .info {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
   animation-delay: 0.6s;
 }
 
-.intro {
+.intro.fade-out {
   animation: fadeOut 0.8s ease forwards;
-  animation-delay: 4.2s;
 }
 
 @keyframes introUp {
