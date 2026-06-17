@@ -110,7 +110,7 @@ nav a.active {
 
 .description {
   margin-top: 70px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 2;
   color: #666;
 }
@@ -136,6 +136,7 @@ nav a.active {
 .project {
   max-width: 1700px;
   margin: 0 auto;
+  margin-top: -20px;
   padding: 0 60px 120px;
 }
 
@@ -147,14 +148,14 @@ nav a.active {
 }
 
 .project-top h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
 }
 
 .project-top button {
   border: none;
   background: none;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
 }
 
