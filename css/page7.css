@@ -145,10 +145,145 @@ nav a.active {
   width: 500px;
 }
 
+/* PROJECT OVERVIEW */
+
+.project-overview {
+  margin-top: -80px;
+  margin-bottom: 120px;
+}
+
+.project-overview h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project-card {
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.project-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 22px;
+  color: #000000;
+  line-height: 1.8;
+}
+
+/* DESIGN CONCEPT */
+
+.design-concept {
+  margin-bottom: 120px;
+}
+
+.design-concept h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.concept-keywords {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+
+.concept-keywords span {
+  width: 250px;
+  height: 250px;
+
+  border: 1px solid #bdbdbd;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.concept-description {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #000000;
+}
+
+/* DESIGN PROCESS */
+
+.design-process {
+  margin-bottom: 120px;
+}
+
+.design-process h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.process-timeline {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px 60px; /* 세로 가로 간격 */
+}
+
+.process-step {
+  padding: 24px;
+}
+
+.step-number {
+  display: block;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #d58bc0;
+
+  margin-bottom: 10px;
+}
+
+.process-step h3 {
+  font-size: 32px;
+  font-weight: 600;
+
+  min-height: 80px; /* 추가 */
+
+  display: flex; /* 추가 */
+  align-items: center; /* 추가 */
+
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  font-size: 22px;
+  line-height: 1.8;
+
+  color: #000000;
+
+  min-height: 72px; /* 추가 */
+}
+
 /* section title */
 
 section h2 {
-  font-size: 42px;
+  font-size: 38px;
   margin-bottom: 50px;
 }
 
@@ -174,7 +309,7 @@ section h2 {
 .worry-card p {
   padding: 30px;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 2;
 }
 
@@ -205,7 +340,7 @@ section h2 {
 }
 
 .solution-item p {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.8;
 }
 
@@ -216,7 +351,7 @@ section h2 {
 }
 
 .shade-desc {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 50px;
 }
 
@@ -322,7 +457,7 @@ section h2 {
 .real-title {
   margin-top: 80px;
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .real-grid {
@@ -439,13 +574,13 @@ section h2 {
 }
 
 .ingredient-text h4 {
-  font-size: 28px;
+  font-size: 22px;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 .ingredient-text p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   color: #666;
 }
