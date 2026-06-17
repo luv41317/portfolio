@@ -86,7 +86,7 @@ nav a.active {
 
 .intro p {
   margin-top: 50px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 2.2;
   color: #666;
 }
@@ -115,6 +115,16 @@ nav a.active {
   margin-bottom: 100px;
 }
 
+.education {
+  margin-top: -100px;
+}
+
+.education,
+.award,
+.skills {
+  margin-left: 120px;
+}
+
 .skills {
   margin-bottom: 0;
 }
@@ -139,14 +149,14 @@ nav a.active {
   display: grid;
   grid-template-columns: 150px 180px 250px 100px;
   row-gap: 30px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .award-item {
   display: grid;
   grid-template-columns: 150px 1fr;
   margin-bottom: 40px;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.8;
 }
 
@@ -179,6 +189,6 @@ nav a.active {
 }
 
 .skill span {
-  font-size: 16px;
+  font-size: 20px;
   color: #666;
 }
