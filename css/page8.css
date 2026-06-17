@@ -162,7 +162,7 @@ nav a.active {
 
 .detail-link {
   display: inline-block;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   margin-left: 370px;
 }
@@ -170,9 +170,150 @@ nav a.active {
 /* section title */
 
 section h2 {
-  font-size: 44px;
+  font-size: 38px;
   margin-bottom: 40px;
   letter-spacing: 1px;
+}
+
+/* PROJECT OVERVIEW */
+
+.project-overview {
+  margin-top: -80px;
+  margin-bottom: 120px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.project-overview h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project-card {
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.project-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 22px;
+  color: #000000;
+  line-height: 1.8;
+}
+
+/* DESIGN CONCEPT */
+
+.design-concept {
+  margin-bottom: 120px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.design-concept h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.concept-keywords {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+
+.concept-keywords span {
+  width: 250px;
+  height: 250px;
+
+  border: 1px solid #bdbdbd;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.concept-description {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #000000;
+}
+
+/* DESIGN PROCESS */
+
+.design-process {
+  margin-bottom: 110px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.design-process h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.process-timeline {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px 60px; /* 세로 가로 간격 */
+}
+
+.process-step {
+  padding: 24px;
+}
+
+.step-number {
+  display: block;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #d58bc0;
+
+  margin-bottom: 10px;
+}
+
+.process-step h3 {
+  font-size: 32px;
+  font-weight: 600;
+
+  min-height: 80px; /* 추가 */
+
+  display: flex; /* 추가 */
+  align-items: center; /* 추가 */
+
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  font-size: 22px;
+  line-height: 1.8;
+
+  color: #000000;
+
+  min-height: 72px; /* 추가 */
 }
 
 /* brand */
@@ -184,7 +325,7 @@ section h2 {
 }
 
 .brand-desc {
-  font-size: 28px;
+  font-size: 22px;
   line-height: 2;
   margin-bottom: 70px;
 }
@@ -202,14 +343,14 @@ section h2 {
 
 .brand-card h3 {
   text-align: center;
-  font-size: 34px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 16px;
 }
 
 .brand-card p {
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   color: #666;
 }
 
@@ -254,14 +395,14 @@ section h2 {
 }
 
 .detail-text h3 {
-  font-size: 30px;
+  font-size: 32px;
   margin-bottom: 12px;
 }
 
 .detail-text p {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.8;
-  color: #666;
+  color: #000000;
 }
 
 /* 오른쪽 */
@@ -299,13 +440,13 @@ section h2 {
 }
 
 .detail-item.text h3 {
-  font-size: 34px;
+  font-size: 22px;
   margin-bottom: 20px;
   font-weight: 600;
 }
 
 .detail-item.text p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.8;
   color: #555;
 }
@@ -331,7 +472,7 @@ section h2 {
 
 .color-card h3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
