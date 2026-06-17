@@ -58,13 +58,14 @@ nav a.active {
   position: absolute;
   left: 35px;
   top: 50%;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  letter-spacing: 8px;
+  letter-spacing: 10px;
   font-size: 16px;
   font-weight: 300;
-  z-index: 9999;
+  text-decoration: none;
+  color: inherit;
 }
 
 .about-top {
