@@ -64,7 +64,8 @@ nav a.active {
 /* 제목 */
 
 .project-header {
-  margin-bottom: 120px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .project-header h1 {
@@ -74,6 +75,7 @@ nav a.active {
 }
 
 .project-tags {
+  justify-content: center;
   display: flex;
   gap: 12px;
 }
@@ -91,7 +93,7 @@ nav a.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 180px;
+  margin-bottom: -15px;
 }
 
 .phones-top {
@@ -119,17 +121,175 @@ nav a.active {
 
 .text-box {
   width: 520px;
+  margin-bottom: 150px;
 }
 
 .text-box h2 {
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 35px;
 }
 
 .text-box p {
   font-size: 22px;
   line-height: 2;
-  color: #555;
+  color: #000000;
+}
+
+/* UX PROCESS */
+
+.ux-process {
+  margin-bottom: 120px;
+}
+
+.ux-process h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.process-timeline {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px 60px; /* 세로 가로 간격 */
+}
+
+.process-step {
+  padding: 24px;
+}
+
+.step-number {
+  display: block;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #d58bc0;
+
+  margin-bottom: 10px;
+}
+
+.process-step h3 {
+  font-size: 32px;
+  font-weight: 600;
+
+  min-height: 80px; /* 추가 */
+
+  display: flex; /* 추가 */
+  align-items: center; /* 추가 */
+
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  font-size: 22px;
+  line-height: 1.8;
+
+  color: #000000;
+
+  min-height: 72px; /* 추가 */
+}
+
+/* MY ROLE */
+
+.my-role {
+  margin-bottom: 130px;
+}
+
+.my-role h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.role-item {
+  padding: 24px 0;
+}
+
+.role-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.role-top h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.role-top span {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.role-bar {
+  width: 100%;
+  height: 8px;
+
+  background: #f1f1f1;
+  border-radius: 999px;
+
+  overflow: hidden;
+}
+
+.role-fill {
+  height: 100%;
+  background: #d58bc0;
+  border-radius: 999px;
+}
+
+.role-description {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #000000;
+}
+
+/* key-learnings */
+
+.key-learnings {
+  margin-bottom: 150px;
+}
+
+.key-learnings h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.key-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.key-card {
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.key-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.key-card h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.key-card p {
+  font-size: 22px;
+  color: #000000;
+  line-height: 1.8;
 }
 
 /* section 2 */
@@ -138,7 +298,7 @@ nav a.active {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 180px;
+  margin-bottom: 10px;
 }
 
 .feature-left {
@@ -146,7 +306,7 @@ nav a.active {
 }
 
 .feature-left h2 {
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 60px;
 }
 
@@ -155,7 +315,7 @@ nav a.active {
 }
 
 .feature-item h3 {
-  font-size: 30px;
+  font-size: 32px;
   margin-bottom: 20px;
   font-weight: 500;
 }
@@ -163,7 +323,7 @@ nav a.active {
 .feature-item p {
   font-size: 22px;
   line-height: 2;
-  color: #555;
+  color: #000000;
 }
 
 .phones-middle {
